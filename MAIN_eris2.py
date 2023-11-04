@@ -14,6 +14,7 @@ PATH_FFMPEG = 'ffmpeg'
 ERIS_Throne_room_ID = '1170214275642556516'         # kana's server
 # ERIS_Throne_room_ID = '1037787782761947219'         # test server
 
+
 johns = ["I live far away ...", "It's so Laggy ...", "My goldfish is dying ...", "I didn't have concent smh ...",
          "The monitor is bigger than I'm used to", "My door was open", "My keyboard was upside down", 
          "You stopped me from sneezing", "Shut The FUCK UP YOU DUMB BITCH", "My mic turn off broo", "I forgot ...",
@@ -39,7 +40,7 @@ class CustomHelp(commands.HelpCommand):
 
     def get_command_signature(self, command):
         return f"{self.context.prefix}{command.qualified_name} {command.signature}"
-    
+
 
 @bot.event
 async def on_ready():
@@ -70,7 +71,7 @@ async def whoami(ctx):
         percentage = random.randint(10, 100)
         await ctx.channel.send(random.choice([f"You're {percentage}% Mexican", "You're Matt?"]))
     elif (str(ctx.author.name).lower() == 'juicybootypipes'):
-        await ctx.channel.send(random.choice(["You remeber me don't you?", "Just cause you wield me dosn't mean you own me", "Get me a Soul Cube and then I'll tell you for sure"]))
+        await ctx.channel.send(random.choice(["You remeber me don't you?", "Just cause you wield me dosn't mean you own me", "Get me a Wishing Cube and then I'll tell you for sure"]))
     elif (str(ctx.author.name).lower() == 'hanahakisyndrome'):
         await ctx.channel.send(random.choice(["You're not so bad", "You're sweet"]))
 
@@ -93,4 +94,4 @@ async def wrap_up(ctx, n=2):
 
 ERIS_CONFIG = load_soul()
 
-bot.run(ERIS_CONFIG['eris_soul'])
+bot.run(ERIS_CONFIG['dark_wishing_cube'])
